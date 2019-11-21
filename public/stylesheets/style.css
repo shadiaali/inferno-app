@@ -1,0 +1,28 @@
+body{
+	background-color: rgb(245, 241, 241);
+	font-family: 'Mandali', sans-serif;
+}
+
+h1{
+	font-family: 'Julee',cursive;
+
+}
+
+.container {
+	background-color: rgb(245, 241, 241);
+}
+
+#mainNav ul {
+	list-style-type: none;
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+
+#mainNav ul li {
+	display: inline;
+	margin-right: 15px;
+}
+
+.wow {
+	visibility: hidden;
+}

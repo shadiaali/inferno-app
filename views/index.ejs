@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dante's Inferno</title>
+  <meta name="description" content="content description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+  <!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Julee|Mandali&display=swap" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--Content -->
+  <h1 class="mt-5  display-1 align-items-center text-center"><%= title %></h1>
+        <% include partials/menu%>
+
+  <div class="container wow fadeIn">
+<% infernos.forEach(function(inferno){ %>
+
+
+<!-- Card -->
+<div class="card card-image"
+  style="background-image: url(images/<%= inferno.image %>);">
+
+  <!-- Content -->
+  <div class="black-text text-center d-flex align-items-center  py-5 px-4">
+    <div class="rgba-white-strong pt-3 pb-3 pl-3 pr-3" style="border-radius:25px;">
+      <div class="rgba-white-strong pt-3 pb-3 pl-3 pr-3" style="border-radius:25px;">
+
+      <h1 class="card-title pt-2"><strong><%= inferno.circle %></strong></h1>
+            <h6>
+              <blockquote><strong><i> <%= inferno.quote %> </i></strong></blockquote>
+            </h6>
+      <h5><%= inferno.description %></h5>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Card -->
+<br>
+<%});%>
+
+
+
+  </div>
+  
+  <!--End content-->
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+<!--main javascript-->
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+   // Animations initialization
+  new WOW().init();
+</script>
+</body>
+
+</html>
